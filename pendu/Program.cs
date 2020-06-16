@@ -10,7 +10,7 @@ namespace pendu
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("yann est passé par la");
         }
     }
 }
