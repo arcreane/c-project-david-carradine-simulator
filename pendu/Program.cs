@@ -17,6 +17,7 @@ namespace Pendu
 
         static void Main(string[] args)
         {
+<<<<<<< HEAD
 
             var file = File.ReadAllLines(FILE_PATH, Encoding.GetEncoding("iso-8859-1"));
 
@@ -30,6 +31,12 @@ namespace Pendu
 
             var pendu = new GameInstance(Wordsfrompath, MAX_ERROR) ;
             pendu.Play();
+=======
+            Console.WriteLine("yann est passe par la");
+            Console.WriteLine("Ariel t'attendais");
+             Console.WriteLine("elie t'attendais");
+             Console.WriteLine("Mehdi est en retard");
+>>>>>>> master
         }
     }
 }
