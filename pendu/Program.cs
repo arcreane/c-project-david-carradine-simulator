@@ -1,10 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
 using pendu.Ressources;
+using System.Collections.Generic;
+using System;
+using System.IO;
+using System.Text;
 
 namespace Pendu
 {
@@ -17,7 +15,7 @@ namespace Pendu
 
         static void Main(string[] args)
         {
-
+            var stop = false;
             var file = File.ReadAllLines(path: FILE_PATH, Encoding.GetEncoding("iso-8859-1"));
 
             List<Word> Wordsfrompath = new List<Word>();
@@ -25,11 +23,21 @@ namespace Pendu
             foreach (var item in file)
             {
                 var word = new Word(item);
-            Wordsfrompath.Add(word);
+                Wordsfrompath.Add(word);
             };
 
-            var pendu = new GameInstance(Wordsfrompath, MAX_ERROR);
-            pendu.Play();
+            while (!stop)
+            {
+                var pendu = new GameInstance(Wordsfrompath, MAX_ERROR);
+                pendu.Play();
+                Console.WriteLine("arreter là ? o/n");
+                var entry = Console.ReadLine();
+                if(entry == "o")
+                {
+                    stop = true;
+                }
+            }
+
         }
     }
 }
