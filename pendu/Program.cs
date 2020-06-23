@@ -12,7 +12,7 @@ namespace Pendu
     {
         #region Variable de jeu
         public const int MAX_ERROR = 10; //nombre d'erreur max
-        public const string FILE_PATH = @"C:\Users\ariel\source\repos\pendu\pendu\Ressources\liste_francais.txt"; //chemin du fichier
+        public const string FILE_PATH = @"C:\Users\ASUS\source\repos\c-project-david-carradine-simulator\pendu\Ressources\liste_francais.txt"; //chemin du fichier
         #endregion
 
         static void Main(string[] args)
@@ -28,7 +28,7 @@ namespace Pendu
             Wordsfrompath.Add(word);
             };
 
-            var pendu = new GameInstance(Wordsfrompath, MAX_ERROR) ;
+            var pendu = new GameInstance( MAX_ERROR) ;
             pendu.Play();
         }
     }

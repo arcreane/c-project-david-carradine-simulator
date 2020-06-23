@@ -127,6 +127,7 @@ namespace Pendu
                 if (Misses.Count >= maxErrors)
                 {
                     Console.WriteLine("Perdu !");
+                    Console.WriteLine("le mot a trouver était : "+ WordToGuess.Text);
                     Console.ReadKey();
                     break;
                 }
