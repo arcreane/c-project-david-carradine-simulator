@@ -39,7 +39,21 @@ namespace Pendu
                 new Word("onlyfan"),
                 new Word("belle-delphine"),
                 new Word("webstart"),
-                new Word("test"),
+                new Word("numéro"),
+                new Word("testostérone"),
+                new Word("loli"),
+                new Word("otaku"),
+                new Word("tommy"),
+                new Word("information"),
+                new Word("négation"),
+                new Word("débutant"),
+                new Word("introduction"),
+                new Word("constitution"),
+                new Word("fioriture"),
+                new Word("poison"),
+                new Word("javascript"),
+                new Word("inscription"),
+                new Word("punition")
             };
 
             Guesses = new List<char>();
